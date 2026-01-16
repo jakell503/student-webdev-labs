@@ -8,8 +8,61 @@
   </head>
   <body>
     <main>
-      <form action="/submit">
-        <!-- Add your code here -->
+      <form method="post" action="/submit">
+        <h1>Form</h1>
+        <div>
+          <label for="Full Name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Full Name" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@pdx.edu"
+          />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Favorite Character:</legend>
+          <div>
+            <input
+              type="radio"
+              id="Spongebob"
+              name="character"
+              value="Spongebob"
+            />
+            <label for="Spongebob">Spongebob</label>
+          </div>
+          <div>
+            <input type="radio" id="Sandy" name="character" value="Sandy" />
+            <label for="Sandy">Sandy</label>
+          </div>
+          <div>
+            <input type="radio" id="Patrick" name="character" value="Patrick" />
+            <label for="Patrick">Patrick</label>
+          </div>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <div>
+            <input type="checkbox" id="all" name="topics" value="all" />
+            <label for="all">Yes, I have watched all episodes!</label>
+          </div>
+          <div>
+            <input type="checkbox" id="meme" name="topics" value="meme" />
+            <label for="meme">Yes, it's got the best memes.</label>
+          </div>
+        </fieldset>
+        <br />
+
+        <div>
+          <input type="submit" value="Submit Form" />
+          <input type="reset" value="Reset Form" />
+        </div>
       </form>
     </main>
   </body>
