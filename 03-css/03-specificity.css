@@ -3,23 +3,48 @@
 nav .list-item > a {
   color: var(--purple);
 }
+/*
+nav is an element
+.list-item is a class
+a is an element
+specificity is 0-1-2  */
 
 #main::first-letter {
   color: var(--purple);
 }
+/* 
+main is an ID
+first leter is a psuedo element
+specificity is 1-0-1*/
 
 input[type] {
   color: var(--purple);
 }
+/* [type] is an attribute
+input is a type
+specificity is 0-1-1 */
 
 section .main::first-line {
   color: var(--purple);
 }
+/* section is a type
+.main is a class selector
+first-line is a psuedo element
+specificity is 0-1-2 */
 
-nav ul.menu li#first a:not([class='visited']) {
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
+/* #first is an ID
+.menu is a class
+ [class='visited'] is an attribute
+ :not is an attribute
+ nav, ul, li, a are types
+specificity is 1-2-4
+ */
 
 div ol li ul li ol li ul li a {
   color: var(--purple);
 }
+/* All types
+specificity is 0-0-10 */
